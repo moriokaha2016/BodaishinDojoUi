@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid pb-2">
   <div class="row">
     <div class="col location-banner">
       <img src="assets/img/MatsumotCastle.jpg" class="img-fluid" alt="Top banner location">
@@ -6,50 +6,30 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid pt-2">
   <div class="row">
     <div class="col">
-        <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5724.36390826026!2d28.62795503579791!3d44.162109141872754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x374b9c4e9f352807!2sJu-Jitsu%2C%20Judo%20and%20Wing%20Chun%20Dojo!5e0!3m2!1sen!2sro!4v1641233145658!5m2!1sen!2sro" width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5724.36390826026!2d28.62795503579791!3d44.162109141872754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x374b9c4e9f352807!2sJu-Jitsu%2C%20Judo%20and%20Wing%20Chun%20Dojo!5e0!3m2!1sen!2sro!4v1641233145658!5m2!1sen!2sro" width="auto" height="470" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
 </div>
 
-<!-- <div class="container-fluid contact-details">
-  <div class="row">
-      <div class="col">
-          <mat-list role="list">
-            <mat-list-item role="listitem"><span class="material-icons">place</span><span class="m-2">Bulevardul 1 Mai, Constanța 900716</span></mat-list-item>
-            <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 734187755</span></mat-list-item>
-            <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 737371238 </span></mat-list-item>
-            <mat-list-item role="listitem"><span class="material-icons">alternate_email</span><span class="m-2">office@bodaishin.ro</span></mat-list-item>
-          </mat-list>
-      </div>
+<div class="content pt-2 pb-3">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let card of cards">
+      <mat-card class="mat-elevation-z4">
 
-    <div class="col">
+        <mat-card-header>
+          <span class="material-icons main-icon">{{card.icon}}</span>
+        </mat-card-header>
+
         <mat-list role="list">
-          <mat-list-item role="listitem"><span class="material-icons">place</span><span class="m-2">Bulevardul 1 Mai, Constanța 900716</span></mat-list-item>
-          <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 734187755</span></mat-list-item>
-          <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 737371238 </span></mat-list-item>
-          <mat-list-item role="listitem"><span class="material-icons">alternate_email</span><span class="m-2">office@bodaishin.ro</span></mat-list-item>
+          <mat-list-item role="listitem"><span class="span-item span-item-title">{{card.title}}</span></mat-list-item>
+          <mat-list-item role="listitem"><span class="span-item">{{card.firstRow}}</span></mat-list-item>
+          <mat-list-item role="listitem"><span class="span-item">{{card.secondRow}}</span></mat-list-item>
         </mat-list>
+
+      </mat-card>
     </div>
   </div>
-</div> -->
-<div class="row">
-  <div class="col-md-6 col-xs-12">
-    <mat-list role="list">
-      <mat-list-item role="listitem"><span class="material-icons">place</span><span class="m-2">Bulevardul 1 Mai, Constanța 900716</span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 734187755 - Sensei Ungureanu Marius</span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 737371238 - Sensei Adetu Daniel</span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">alternate_email</span><span class="m-2">office@bodaishin.ro</span></mat-list-item>
-    </mat-list>
-  </div>
-  <div class="col-md-6 col-xs-12">
-    <mat-list role="list">
-      <mat-list-item role="listitem"><span class="material-icons">place</span><span class="m-2">Bulevardul 1 Mai, Constanța 900716</span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 734187755</span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">call</span><span class="m-2">+40 737371238 </span></mat-list-item>
-      <mat-list-item role="listitem"><span class="material-icons">alternate_email</span><span class="m-2">office@bodaishin.ro</span></mat-list-item>
-    </mat-list>
-  </div>
-  </div>
+</div>

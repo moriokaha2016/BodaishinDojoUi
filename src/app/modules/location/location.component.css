@@ -5,6 +5,8 @@
 
 .location-banner {
   max-height: 400px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .contact-details {
@@ -13,4 +15,44 @@
 
 .material-icons {
   color: black;
+}
+
+mat-card-header {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+mat-card-header .main-icon {
+  font-size: 70px;
+  padding: 25px;
+  background: #cbb2f1;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+
+mat-card-header .main-icon:hover {
+  background: #673ab7;
+  border-radius: 100px;
+  color: white;
+}
+
+mat-list-item {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.span-item {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.span-item-title {
+  font-size: larger;
+  font-weight: bolder;
 }

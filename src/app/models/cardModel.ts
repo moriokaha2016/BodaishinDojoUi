@@ -4,7 +4,6 @@ export class Card {
   public text: string ="";
   public imagePath: string ="";
 
-
   constructor(title: string, subTitle: string, text: string, imagePath: string) {
     this.title = title;
     this.subTitle = subTitle;
