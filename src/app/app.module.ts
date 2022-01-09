@@ -18,6 +18,8 @@ import { LocationModule } from './modules/location/location.module';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './modules/home/home.component';
 import { LocationComponent } from './modules/location/location.component';
+import { AboutModule } from './modules/about/about.module';
+import { AboutComponent } from './modules/about/about.component';
 
 
 @NgModule({
@@ -40,12 +42,14 @@ import { LocationComponent } from './modules/location/location.component';
     HomeModule,
     FooterModule,
     LocationModule,
+    AboutModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'location', component: LocationComponent },
+      { path: 'about', component: AboutComponent },
       // { path: '**', component: PageNotFoundComponent }
     ])
   ],
