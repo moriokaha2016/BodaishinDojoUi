@@ -1,9 +1,9 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, MediaMatcher } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { filter, map, shareReplay } from 'rxjs/operators';
 import { Constraints } from 'src/app/Helper/constraints';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-menu',
@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 })
 export class NavigationMenuComponent {
   private _mobileQueryListener: () => void;
+  public currentPage: string = "";
+  private subscription: any;
   mobileQuery: MediaQueryList;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -29,6 +31,11 @@ export class NavigationMenuComponent {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addEventListener('change', this._mobileQueryListener);
+    this.subscription =_router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      this.currentPage = event.url;
+    });
   }
 
   logout(){
@@ -53,5 +60,6 @@ export class NavigationMenuComponent {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeEventListener('change', this._mobileQueryListener);
+    this.subscription.unsubscribe();
   }
 }
