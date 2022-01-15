@@ -12,11 +12,21 @@
       <button mat-raised-button color="accent">Logout</button>
     </a>
   </mat-toolbar>
+  <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar-row>
 
   <mat-sidenav-container class="sidenav-container" >
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="15">
-      <mat-nav-list>
+      <mat-nav-list class="pt-0">
         <a mat-list-item href="/home"><span class="material-icons">home</span><span class="m-2">Home</span></a>
         <mat-divider></mat-divider>
         <a mat-list-item href="/about"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>

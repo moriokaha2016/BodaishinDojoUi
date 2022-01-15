@@ -29,3 +29,9 @@ mat-toolbar a {
   color: white;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 500px) {
+  mat-sidenav {
+     top: 112px!important;
+  }
+}
