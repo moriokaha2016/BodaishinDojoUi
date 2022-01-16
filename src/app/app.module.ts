@@ -21,6 +21,7 @@ import { LocationComponent } from './modules/location/location.component';
 import { AboutModule } from './modules/about/about.module';
 import { AboutComponent } from './modules/about/about.component';
 import { TrainingsComponent } from './modules/trainings/trainings.component';
+import { TrainingsModule } from './modules/trainings/trainings.module';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { TrainingsComponent } from './modules/trainings/trainings.component';
     FooterModule,
     LocationModule,
     AboutModule,
+    TrainingsModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
@@ -55,6 +57,7 @@ import { TrainingsComponent } from './modules/trainings/trainings.component';
       { path: 'register', component: RegisterComponent },
     ])
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

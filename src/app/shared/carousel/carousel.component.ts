@@ -12,11 +12,11 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  images = ["assets/img/judoBanner2.jpg","assets/img/judoBanner2.jpg","assets/img/judoBanner2.jpg"];
+  images = ["assets/img/judoBanner1.jpg","assets/img/judoBanner2.jpg","assets/img/judoBanner2.jpg"];
 
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
-    config.interval = 3000;
+    config.interval = 5000;
     config.wrap = true;
     config.keyboard = true;
     config.pauseOnHover = true;
