@@ -20,6 +20,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { LocationComponent } from './modules/location/location.component';
 import { AboutModule } from './modules/about/about.module';
 import { AboutComponent } from './modules/about/about.component';
+import { TrainingsComponent } from './modules/trainings/trainings.component';
 
 
 @NgModule({
@@ -44,13 +45,14 @@ import { AboutComponent } from './modules/about/about.component';
     LocationModule,
     AboutModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'trainings', component: TrainingsComponent },
+      { path: 'location', component: LocationComponent },
+
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
-      { path: 'location', component: LocationComponent },
-      { path: 'about', component: AboutComponent },
-      // { path: '**', component: PageNotFoundComponent }
     ])
   ],
   providers: [],

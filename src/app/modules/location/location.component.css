@@ -33,7 +33,7 @@ mat-card-header .main-icon {
 }
 
 mat-card-header .main-icon:hover {
-  background: #cbb2f1;
+  background: #673ab7;
   border-radius: 100px;
   color: #000000;
 }

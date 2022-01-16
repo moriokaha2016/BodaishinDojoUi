@@ -30,6 +30,10 @@ mat-toolbar a {
   text-decoration: none;
 }
 
+mat-toolbar-row {
+  background-color: lavender;
+}
+
 .menuIsActive {
   background-color: #3C226A !important;
   color: #ffffff!important;

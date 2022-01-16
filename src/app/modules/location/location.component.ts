@@ -23,7 +23,7 @@ export class LocationComponent implements OnInit {
     {
       icon: "call",
       title: "Sunati-ne",
-      firstRow: "Sensei Ungureanu Marius: 0734187755,",
+      firstRow: "Sensei Ungureanu Marius: +40 734187755,",
       secondRow: "Sensei Adetu Daniel: +40 737371238"
     },
     {

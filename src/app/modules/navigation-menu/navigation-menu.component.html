@@ -27,21 +27,21 @@
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="15">
       <mat-nav-list class="pt-0">
-        <a mat-list-item [routerLink]="['/home']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">home</span><span class="m-2">Home</span></a>
+        <a mat-list-item [routerLink]="['/home']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">home</span><span class="m-2">Home</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/about']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
+        <a mat-list-item [routerLink]="['/about']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/trainings']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente</span></a>
+        <a mat-list-item [routerLink]="['/trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
+        <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/program']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">calendar_month</span><span class="m-2">Program antrenamente</span></a>
+        <a mat-list-item [routerLink]="['/program']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">calendar_month</span><span class="m-2">Program</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/evaluate']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">rate_review</span><span class="m-2">Evalueaza</span></a>
+        <!-- <a mat-list-item [routerLink]="['/evaluate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">rate_review</span><span class="m-2">Evalueaza</span></a>
+        <mat-divider></mat-divider> -->
+        <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
-        <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/location']" [routerLinkActive]="['menuIsActive']"><span class="material-icons">place</span><span class="m-2">Location</span></a>
+        <a mat-list-item [routerLink]="['/location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">place</span><span class="m-2">Location</span></a>
       </mat-nav-list>
     </mat-sidenav>
 
