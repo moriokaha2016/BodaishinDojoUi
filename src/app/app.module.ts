@@ -10,7 +10,6 @@ import { RegisterComponent } from './modules/auth/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
-import { NavigationMenuComponent } from './modules/navigation-menu/navigation-menu.component';
 import { CarouselModule } from './shared/carousel/carousel.module';
 import { HomeModule } from './modules/home/home.module';
 import { FooterModule } from './modules/footer/footer.module';
@@ -22,14 +21,14 @@ import { AboutModule } from './modules/about/about.module';
 import { AboutComponent } from './modules/about/about.component';
 import { TrainingsComponent } from './modules/trainings/trainings.component';
 import { TrainingsModule } from './modules/trainings/trainings.module';
+import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    NavigationMenuComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +42,7 @@ import { TrainingsModule } from './modules/trainings/trainings.module';
     CarouselModule,
     HomeModule,
     FooterModule,
+    NavigationMenuModule,
     LocationModule,
     AboutModule,
     TrainingsModule,
