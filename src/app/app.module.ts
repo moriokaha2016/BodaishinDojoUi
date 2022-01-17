@@ -22,6 +22,8 @@ import { AboutComponent } from './modules/about/about.component';
 import { TrainingsComponent } from './modules/trainings/trainings.component';
 import { TrainingsModule } from './modules/trainings/trainings.module';
 import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.module';
+import { ProgramModule } from './modules/program/program.module';
+import { ProgramComponent } from './modules/program/program.component';
 
 
 @NgModule({
@@ -46,12 +48,14 @@ import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.
     LocationModule,
     AboutModule,
     TrainingsModule,
+    ProgramModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'trainings', component: TrainingsComponent },
       { path: 'location', component: LocationComponent },
+      { path: 'program', component: ProgramComponent },
 
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
