@@ -24,6 +24,8 @@ import { TrainingsModule } from './modules/trainings/trainings.module';
 import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.module';
 import { ProgramModule } from './modules/program/program.module';
 import { ProgramComponent } from './modules/program/program.component';
+import { NgZoroAntdModule } from './shared/ng-zoro/ng-zoro-antd.module';
+import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { ProgramComponent } from './modules/program/program.component';
     NgbModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgZoroAntdModule,
     CarouselModule,
     HomeModule,
     FooterModule,
@@ -62,7 +65,9 @@ import { ProgramComponent } from './modules/program/program.component';
     ])
   ],
 
-  providers: [],
+  providers: [
+    { provide: NZ_I18N, useValue: en_US }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
