@@ -1,18 +1,27 @@
 <nz-calendar>
   <ul *nzDateCell="let date" class="events">
     <ng-container [ngSwitch]="date.getDate()">
-      <ng-container *ngSwitchCase="date.getDate()">
-
-        <!-- <li *ngFor="let item of listDataMap.eight" [ngIf]="date.getDay()===6">
+      <!-- <ng-container *ngSwitchCase="showTodayTraining(date)">
+        <li *ngFor="let item of listDataMap.eight">
           <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
-        </li> -->
+        </li>
       </ng-container>
+      <ng-container *ngSwitchCase="10">
+        <li *ngFor="let item of listDataMap.ten">
+          <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
+        </li>
+      </ng-container>
+      <ng-container *ngSwitchCase="11">
+        <li *ngFor="let item of listDataMap.eleven">
+          <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
+        </li>
+      </ng-container> -->
     </ng-container>
   </ul>
-  <ng-container *nzMonthCell="let month">
-    <!-- <div class="notes-month">
-      <section>{{ monthData }}</section>
+  <!-- <ng-container *nzDateCell="let day">
+    <div *ngIf="getDayData(day) as dayData" class="notes-day">
+      <section>{{ dayData }}</section>
       <span>Backlog number</span>
-    </div> -->
-  </ng-container>
+    </div>
+  </ng-container> -->
 </nz-calendar>
