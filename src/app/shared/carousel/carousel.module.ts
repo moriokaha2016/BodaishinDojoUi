@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from './carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MaterialModule } from 'src/app/modules/material/material.module';
+import { MaterialModule } from 'src/app/shared/material-design/material.module';
+import { NgZoroAntdModule } from '../ng-zoro/ng-zoro-antd.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { MaterialModule } from 'src/app/modules/material/material.module';
   ],
   imports: [
     CommonModule,
-    NgbModule,
+    NgZoroAntdModule,
     MaterialModule
   ],
   exports: [

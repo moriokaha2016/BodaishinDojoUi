@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProgramComponent } from './program.component';
-import { MaterialModule } from '../../shared/material-design/material.module';
+import { GaleryComponent } from './galery.component';
 import { NgZoroAntdModule } from 'src/app/shared/ng-zoro/ng-zoro-antd.module';
-
+import { MaterialModule } from 'src/app/shared/material-design/material.module';
 
 
 @NgModule({
   declarations: [
-    ProgramComponent
+    GaleryComponent
   ],
   imports: [
     CommonModule,
@@ -16,4 +15,4 @@ import { NgZoroAntdModule } from 'src/app/shared/ng-zoro/ng-zoro-antd.module';
     NgZoroAntdModule
   ]
 })
-export class ProgramModule { }
+export class GaleryModule { }

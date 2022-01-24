@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TrainingsComponent } from './trainings.component';
 import { FooterModule } from '../footer/footer.module';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from '../../shared/material-design/material.module';
 
 @NgModule({
   declarations: [

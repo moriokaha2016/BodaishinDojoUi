@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './modules/auth/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './modules/material/material.module';
+import { MaterialModule } from './shared/material-design/material.module';
 import { CarouselModule } from './shared/carousel/carousel.module';
 import { HomeModule } from './modules/home/home.module';
 import { FooterModule } from './modules/footer/footer.module';
@@ -26,6 +26,8 @@ import { ProgramModule } from './modules/program/program.module';
 import { ProgramComponent } from './modules/program/program.component';
 import { NgZoroAntdModule } from './shared/ng-zoro/ng-zoro-antd.module';
 import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
+import { GaleryComponent } from './modules/galery/galery.component';
+import { GaleryModule } from './modules/galery/galery.module';
 
 
 @NgModule({
@@ -46,6 +48,7 @@ import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
     NgZoroAntdModule,
     CarouselModule,
     HomeModule,
+    GaleryModule,
     FooterModule,
     NavigationMenuModule,
     LocationModule,
@@ -59,6 +62,7 @@ import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
       { path: 'trainings', component: TrainingsComponent },
       { path: 'location', component: LocationComponent },
       { path: 'program', component: ProgramComponent },
+      { path: 'galery', component: GaleryComponent },
 
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },

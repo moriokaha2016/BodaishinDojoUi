@@ -1,0 +1,12 @@
+<nz-image-group>
+  <div nz-row>
+    <div nz-col nzSpan="6" *ngFor="let image of array" style="padding: 4px;">
+      <nz-card nzHoverable [nzCover]="coverTemplate">
+        <nz-card-meta nzTitle="Uchi mata" nzDescription="www.bodaishin.ro"></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img nz-image width="210px; padding: 5px;" nzSrc="{{image}}" alt="" />
+      </ng-template>
+    </div>
+  </div>
+</nz-image-group>
