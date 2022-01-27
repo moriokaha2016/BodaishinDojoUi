@@ -28,6 +28,7 @@ import { NgZoroAntdModule } from './shared/ng-zoro/ng-zoro-antd.module';
 import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
 import { GaleryComponent } from './modules/galery/galery.component';
 import { GaleryModule } from './modules/galery/galery.module';
+import { DonateComponent } from './modules/donate/donate.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { GaleryModule } from './modules/galery/galery.module';
       { path: 'location', component: LocationComponent },
       { path: 'program', component: ProgramComponent },
       { path: 'galery', component: GaleryComponent },
+      { path: 'donate', component: DonateComponent },
 
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
