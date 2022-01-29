@@ -1,6 +1,6 @@
 [nz-carousel-content] {
   text-align: center;
-  height: 350px;
+  height: 531px;
   line-height: 160px;
   background: #364d79;
   color: #fff;
@@ -11,4 +11,8 @@ h3 {
   color: #fff;
   margin-bottom: 0;
   user-select: none;
+}
+
+[nz-carousel-content] img {
+  height: 530px;
 }
