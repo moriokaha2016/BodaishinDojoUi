@@ -22,8 +22,7 @@ export class HomeComponent implements OnInit {
       subTitle: "Echilibru psiho emotional",
       text: "Autocunoasterea prin arta martiala ofera sansa unui suport emotional si psihologic solid pentru viitorul adult.",
       imagePath: "assets/img/seiza.jpg"
-     },
-    // { title: "book4", subTitle: "book desc 4 ", text: "sdfsdfsdf", imagePath: "" }
+     }
   ];
   ngOnInit(): void {
   }
