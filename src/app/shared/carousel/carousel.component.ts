@@ -16,6 +16,6 @@ export class CarouselComponent implements OnInit {
 
   images = [
     "/assets/img/judoBanner2.jpg",
-    "/assets/img/zaRei.jpg"
+    "/assets/img/warFlag.jpg"
   ];
 }

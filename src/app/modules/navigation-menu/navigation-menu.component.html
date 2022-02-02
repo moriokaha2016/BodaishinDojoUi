@@ -3,7 +3,7 @@
   <mat-toolbar color="primary">
     <!-- <span><img class="img-fluid logo" src="assets/img/bondaishinlogo.png"></span> -->
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-    <span>Bodai Shin Dojo</span>
+    <span><a mat-list-item [routerLink]="['/home']">Bodai Shin Dojo</a></span>
     <span class="spacer"></span>
     <a mat-list-item href="/login" *ngIf="!isUserLoggedIn">
       <button mat-raised-button color="accent">Login</button>
@@ -12,16 +12,15 @@
       <button mat-raised-button color="accent">Logout</button>
     </a>
   </mat-toolbar>
-  <!-- <mat-toolbar-row color="secondary">
-    <span>{{currentPage | titlecase}}</span>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>share</mat-icon>
-    </button>
-  </mat-toolbar-row> -->
+  <mat-toolbar-row color="secondary">
+    <div class="row">
+      <div class="col">
+        Inscrierile pentru cursul de Judo copii sau adulti se fac pe toata durata<br>
+         anului calendaristic. Predarea este de la zero pentru fiecare nou venit.
+      </div>
+    </div>
+
+  </mat-toolbar-row>
 
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
