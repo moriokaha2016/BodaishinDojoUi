@@ -5,20 +5,24 @@
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
     <span><a mat-list-item [routerLink]="['/home']">Bodai Shin Dojo</a></span>
     <span class="spacer"></span>
-    <a mat-list-item href="/login" *ngIf="!isUserLoggedIn">
+    <!-- <a mat-list-item href="/login" *ngIf="!isUserLoggedIn">
       <button mat-raised-button color="accent">Login</button>
     </a>
     <a mat-list-item href="/home" *ngIf="isUserLoggedIn" (click)="logout()">
       <button mat-raised-button color="accent">Logout</button>
-    </a>
+    </a> -->
   </mat-toolbar>
   <mat-toolbar-row color="secondary">
     <div class="row">
       <marquee class="col-md-12">
-        Atentie !!! Inscrierile pentru cursul de Judo copii sau adulti se fac pe toata durata anului calendaristic. Predarea este de la zero pentru fiecare nou venit.
+        Inscrierile pentru cursul de Judo copii sau adulti se fac pe toata durata anului calendaristic;
+        Predarea este de la zero pentru fiecare nou venit;
+        Varsta minima pentru inscriere este de 6 ani;
+        Antrenamentul dureaza 2 ore;
+        Exista o programa bine definita si termene prestabilite pentru examinare;
+        Echipament necesar: Gi, papuci, prosop, apa;
       </marquee>
     </div>
-
   </mat-toolbar-row>
 
   <mat-sidenav-container class="sidenav-container">
@@ -31,14 +35,14 @@
         <mat-divider></mat-divider>
         <a mat-list-item [routerLink]="['/trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente Judo</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
-        <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/program']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">calendar_month</span><span class="m-2">Program</span></a>
-        <mat-divider></mat-divider>
+        <!-- <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
+        <mat-divider></mat-divider> -->
+        <!-- <a mat-list-item [routerLink]="['/program']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">calendar_month</span><span class="m-2">Program</span></a>
+        <mat-divider></mat-divider> -->
         <!-- <a mat-list-item [routerLink]="['/evaluate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">rate_review</span><span class="m-2">Evalueaza</span></a>
         <mat-divider></mat-divider> -->
-        <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
-        <mat-divider></mat-divider>
+        <!-- <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
+        <mat-divider></mat-divider> -->
         <a mat-list-item [routerLink]="['/location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">place</span><span class="m-2">Location</span></a>
       </mat-nav-list>
     </mat-sidenav>

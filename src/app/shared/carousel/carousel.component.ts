@@ -15,7 +15,8 @@ export class CarouselComponent implements OnInit {
   }
 
   images = [
-    "/assets/img/judoBanner2.jpg",
-    "/assets/img/warFlag.jpg"
+    "/assets/img/hon_kesa_gatame.jpg",
+    "/assets/img/tomoe_nage.jpg",
+    "/assets/img/kata_guruma.jpg",
   ];
 }

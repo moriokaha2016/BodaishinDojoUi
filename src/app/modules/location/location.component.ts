@@ -23,8 +23,8 @@ export class LocationComponent implements OnInit {
     {
       icon: "call",
       title: "Sunati-ne",
-      firstRow: "Sensei Ungureanu Marius: +40 734187755 (Whats App),",
-      secondRow: "Sensei Adetu Daniel: +40 737371238 (Whats App)"
+      firstRow: "Sensei Ungureanu Marius: +40 734187755,",
+      secondRow: "Sensei Adetu Daniel: +40 737371238"
     },
     {
       icon: "alternate_email",
