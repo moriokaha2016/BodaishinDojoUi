@@ -4,9 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './modules/auth/login/login.component';
-import { HttpClientModule } from '@angular/common/http';
-import { RegisterComponent } from './modules/auth/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material-design/material.module';
@@ -33,16 +30,13 @@ import { DonateComponent } from './modules/donate/donate.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
     NgbModule,
     BrowserAnimationsModule,
     MaterialModule,
@@ -65,9 +59,6 @@ import { DonateComponent } from './modules/donate/donate.component';
       // { path: 'program', component: ProgramComponent },
       // { path: 'galery', component: GaleryComponent },
       // { path: 'donate', component: DonateComponent },
-
-      // { path: 'login', component: LoginComponent },
-      // { path: 'register', component: RegisterComponent },
     ])
   ],
 
