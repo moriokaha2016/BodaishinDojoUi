@@ -23,14 +23,14 @@ export class LocationComponent implements OnInit {
     {
       icon: "call",
       title: "Sunati-ne",
-      firstRow: "Sensei Ungureanu Marius: +40 734187755,",
-      secondRow: "Sensei Adetu Daniel: +40 737371238"
+      firstRow: "Sensei Ungureanu Marius: 0734187755,",
+      secondRow: "Sensei Adetu Daniel: 0737371238"
     },
     {
       icon: "alternate_email",
       title: "Trimite-ti un email",
-      firstRow: "office@bodaishin.ro,",
-      secondRow: "info@bodaishin.ro"
+      firstRow: "ungureanucosminmarius@gmail.com,",
+      secondRow: ""
      },
      {
       icon: "place",
