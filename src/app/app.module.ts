@@ -62,12 +62,12 @@ import { DonateComponent } from './modules/donate/donate.component';
       { path: 'about', component: AboutComponent },
       { path: 'trainings', component: TrainingsComponent },
       { path: 'location', component: LocationComponent },
-      { path: 'program', component: ProgramComponent },
-      { path: 'galery', component: GaleryComponent },
-      { path: 'donate', component: DonateComponent },
+      // { path: 'program', component: ProgramComponent },
+      // { path: 'galery', component: GaleryComponent },
+      // { path: 'donate', component: DonateComponent },
 
-      { path: 'login', component: LoginComponent },
-      { path: 'register', component: RegisterComponent },
+      // { path: 'login', component: LoginComponent },
+      // { path: 'register', component: RegisterComponent },
     ])
   ],
 
