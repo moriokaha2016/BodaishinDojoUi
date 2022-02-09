@@ -2,7 +2,6 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints, MediaMatcher } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { filter, map, shareReplay } from 'rxjs/operators';
-import { Constraints } from 'src/app/Helper/constraints';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -36,19 +35,6 @@ export class NavigationMenuComponent {
     ).subscribe((event: NavigationEnd) => {
       this.currentPage = event.url;
     });
-  }
-
-  logout(){
-    localStorage.removeItem(Constraints.USER_KEY);
-    this._router.navigate(["/home"]);
-  }
-
-  get isUserLoggedIn(){
-    const userSession = localStorage.getItem(Constraints.USER_KEY);
-    if(userSession && userSession.length > 0){
-      return true;
-    }
-    return false;
   }
 
   get isFooterDisplayed(){

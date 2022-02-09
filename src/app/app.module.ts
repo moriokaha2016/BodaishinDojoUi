@@ -20,12 +20,10 @@ import { TrainingsComponent } from './modules/trainings/trainings.component';
 import { TrainingsModule } from './modules/trainings/trainings.module';
 import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.module';
 import { ProgramModule } from './modules/program/program.module';
-import { ProgramComponent } from './modules/program/program.component';
 import { NgZoroAntdModule } from './shared/ng-zoro/ng-zoro-antd.module';
 import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
-import { GaleryComponent } from './modules/galery/galery.component';
 import { GaleryModule } from './modules/galery/galery.module';
-import { DonateComponent } from './modules/donate/donate.component';
+import { ɵNzResultNotFoundComponent } from 'ng-zorro-antd/result';
 
 
 @NgModule({
@@ -59,6 +57,7 @@ import { DonateComponent } from './modules/donate/donate.component';
       // { path: 'program', component: ProgramComponent },
       // { path: 'galery', component: GaleryComponent },
       // { path: 'donate', component: DonateComponent },
+      { path: '**', component: ɵNzResultNotFoundComponent },
     ])
   ],
 

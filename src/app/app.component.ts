@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Constraints } from './Helper/constraints';
 
 @Component({
   selector: 'app-root',
