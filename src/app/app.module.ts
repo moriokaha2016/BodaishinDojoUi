@@ -11,19 +11,14 @@ import { CarouselModule } from './shared/carousel/carousel.module';
 import { HomeModule } from './modules/home/home.module';
 import { FooterModule } from './modules/footer/footer.module';
 import { LocationModule } from './modules/location/location.module';
-import { RouterModule } from '@angular/router';
-import { HomeComponent } from './modules/home/home.component';
-import { LocationComponent } from './modules/location/location.component';
 import { AboutModule } from './modules/about/about.module';
-import { AboutComponent } from './modules/about/about.component';
-import { TrainingsComponent } from './modules/trainings/trainings.component';
 import { TrainingsModule } from './modules/trainings/trainings.module';
 import { NavigationMenuModule } from './modules/navigation-menu/navigation-menu.module';
 import { ProgramModule } from './modules/program/program.module';
 import { NgZoroAntdModule } from './shared/ng-zoro/ng-zoro-antd.module';
 import { en_US, NZ_I18N } from 'ng-zorro-antd/i18n';
 import { GaleryModule } from './modules/galery/galery.module';
-import { ɵNzResultNotFoundComponent } from 'ng-zorro-antd/result';
+import { NotFoundModule } from './modules/not-found/not-found.module';
 
 
 @NgModule({
@@ -48,17 +43,7 @@ import { ɵNzResultNotFoundComponent } from 'ng-zorro-antd/result';
     AboutModule,
     TrainingsModule,
     ProgramModule,
-    RouterModule.forRoot([
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'trainings', component: TrainingsComponent },
-      { path: 'location', component: LocationComponent },
-      // { path: 'program', component: ProgramComponent },
-      // { path: 'galery', component: GaleryComponent },
-      // { path: 'donate', component: DonateComponent },
-      { path: '**', component: ɵNzResultNotFoundComponent },
-    ])
+    NotFoundModule
   ],
 
   providers: [
