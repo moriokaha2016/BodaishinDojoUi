@@ -7,7 +7,9 @@ import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { TrainingsComponent } from './modules/trainings/trainings.component';
 
 const routes: Routes = [
-
+  { path:"",
+    component: HomeComponent
+  },
   { path:"home",
     component: HomeComponent
   },
