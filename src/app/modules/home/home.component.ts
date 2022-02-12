@@ -11,17 +11,17 @@ export class HomeComponent implements OnInit {
     { title: "Initiere",
       subTitle: "Primi pasi pe tatami",
       text: "Alaturi de noi, copii dumneavoastra pot face primii pasi intr-o calatorie magica a universului artelor martiale.",
-      imagePath: "assets/img/o_goshi.jpg"
+      imagePath: "assets/img/o_goshi.webp"
     },
     { title: "Dezvoltare personala",
       subTitle: "Evolutie",
       text: "Autocunoasterea prin arta martiala ofera sansa unui suport emotional si psihologic solid pentru viitorul adult.",
-      imagePath: "assets/img/ipon_seoi_nage.jpg"
+      imagePath: "assets/img/ipon_seoi_nage.webp"
     },
     { title: "Armonie",
       subTitle: "Echilibru psiho emotional",
       text: "Armonia este o consecinta a antrenamentului focalizat martial si se dobandeste prin autocunoastere si experiente multple pe tatami.",
-      imagePath: "assets/img/uchi_mata.jpg"
+      imagePath: "assets/img/uchi_mata.webp"
      }
   ];
   ngOnInit(): void {
