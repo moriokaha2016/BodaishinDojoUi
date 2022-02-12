@@ -33,6 +33,11 @@ mat-toolbar-row {
   background-color: #3C226A !important;
   color: #ffffff!important;
 }
+.mat-icon-star{
+  font-size: 10px;
+  margin-left: 12px;
+  margin-right: 0px;
+}
 
 @media only screen and (max-width: 500px) {
   mat-sidenav {
