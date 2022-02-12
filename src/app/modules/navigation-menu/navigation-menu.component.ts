@@ -37,13 +37,6 @@ export class NavigationMenuComponent {
     });
   }
 
-  get isFooterDisplayed(){
-    if((this._router.url != "/login") && (this._router.url != "/register")){
-      return true;
-    }
-    return false;
-  }
-
   ngOnDestroy(): void {
     this.mobileQuery.removeEventListener('change', this._mobileQueryListener);
     this.subscription.unsubscribe();
