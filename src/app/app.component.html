@@ -1,7 +1,5 @@
 <app-navigation-menu>
-  <router-outlet>
-    <!-- 1. componenta pt carusel bootstrap -->
-  </router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
 </app-navigation-menu>
 
 
