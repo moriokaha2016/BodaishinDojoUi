@@ -29,7 +29,7 @@ export class LocationComponent implements OnInit {
     {
       icon: "alternate_email",
       title: "Trimite-ti un email",
-      firstRow: "ungureanucosminmarius@gmail.com,",
+      firstRow: "ungureanucosminmarius@gmail.com",
       secondRow: ""
      },
      {
