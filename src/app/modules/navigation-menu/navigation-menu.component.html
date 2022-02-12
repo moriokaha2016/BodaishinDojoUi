@@ -1,39 +1,21 @@
 <div [class.example-is-mobile]="mobileQuery.matches">
 
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" (scroll)="onScroll()" [ngClass]="navbarfixed?'fixed':'notfixed'">
     <!-- <span><img class="img-fluid logo" src="assets/img/bondaishinmic.jpg"></span> -->
     <button mat-icon-button (click)="snav.toggle()" aria-label="Center Align"><mat-icon>menu</mat-icon></button>
-    <span><a mat-list-item [routerLink]="['/home']">Bodai Shin Dojo</a></span>
+    <span><a mat-list-item [routerLink]="['home']">Bodai Shin Dojo</a></span>
     <span class="spacer"></span>
   </mat-toolbar>
-  <mat-toolbar-row color="secondary">
-    <div class="row">
-      <marquee class="col-md-12">
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        <span>Inscrierile pentru cursul de Judo copii sau adulti se fac pe toata durata anului calendaristic</span>
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        <span>Predarea este de la zero pentru fiecare nou venit</span>
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        Varsta minima pentru inscriere este de 6 ani
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        Antrenamentul dureaza 2 ore
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        Exista o programa bine definita si termene prestabilite pentru examinare
-        <mat-icon class="mat-icon-star">star</mat-icon>
-        Echipament necesar: Vointa, Gi, papuci de interior, prosop, apa
-      </marquee>
-    </div>
-  </mat-toolbar-row>
 
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="15">
       <mat-nav-list class="pt-0">
-        <a mat-list-item [routerLink]="['/home']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">home</span><span class="m-2">Home</span></a>
+        <a mat-list-item [routerLink]="['home']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">home</span><span class="m-2">Home</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/about']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
+        <a mat-list-item [routerLink]="['about']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente Judo</span></a>
+        <a mat-list-item [routerLink]="['trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente Judo</span></a>
         <mat-divider></mat-divider>
         <!-- <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
         <mat-divider></mat-divider> -->
@@ -43,11 +25,29 @@
         <mat-divider></mat-divider> -->
         <!-- <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
         <mat-divider></mat-divider> -->
-        <a mat-list-item [routerLink]="['/location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">place</span><span class="m-2">Location</span></a>
+        <a mat-list-item [routerLink]="['location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">place</span><span class="m-2">Location</span></a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
+      <mat-toolbar-row color="secondary">
+        <div class="row">
+          <marquee class="col-md-12">
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            <span>Inscrierile pentru cursul de Judo copii sau adulti se fac pe toata durata anului calendaristic</span>
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            <span>Predarea este de la zero pentru fiecare nou venit</span>
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            Varsta minima pentru inscriere este de 6 ani
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            Antrenamentul dureaza 2 ore
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            Exista o programa bine definita si termene prestabilite pentru examinare
+            <mat-icon class="mat-icon-star">star</mat-icon>
+            Echipament necesar: Vointa, Gi, papuci de interior, prosop, apa
+          </marquee>
+        </div>
+      </mat-toolbar-row>
       <ng-content></ng-content>
       <app-footer></app-footer>
     </mat-sidenav-content>
