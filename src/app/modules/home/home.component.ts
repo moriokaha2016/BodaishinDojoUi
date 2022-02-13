@@ -9,7 +9,7 @@ import { Card } from 'src/app/models/cardModel';
 export class HomeComponent implements OnInit {
   public cards: Array<Card> = [
     { title: "Inițiere",
-      subTitle: "Primii pasi pe tatami",
+      subTitle: "Primii pași pe tatami",
       text: "Alături de noi, copiii dumneavoastră pot face primii pași într-o călătorie magică a universului artelor marțiale.",
       imagePath: "assets/img/o_goshi.webp"
     },
