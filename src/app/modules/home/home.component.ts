@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
       imagePath: "assets/img/ipon_seoi_nage.webp"
     },
     { title: "Armonie",
-      subTitle: "Coordonarea dintre minte si corp",
+      subTitle: "Coordonarea dintre minte și corp",
       text: "Armonia este o consecință a antrenamentului focalizat marțial și se dobândește prin experiențe multiple care duc la autocunoaștere.",
       imagePath: "assets/img/uchi_mata.webp"
      }
