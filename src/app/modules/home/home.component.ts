@@ -8,14 +8,14 @@ import { Card } from 'src/app/models/cardModel';
 })
 export class HomeComponent implements OnInit {
   public cards: Array<Card> = [
-    { title: "Initiere",
+    { title: "Inițiere",
       subTitle: "Primii pasi pe tatami",
       text: "Alături de noi, copiii dumneavoastră pot face primii pași într-o călătorie magică a universului artelor marțiale.",
       imagePath: "assets/img/o_goshi.webp"
     },
-    { title: "Dezvoltare personala",
-      subTitle: "Evolutie",
-      text: "Educatia este un proces de lunga durată care duce la evolutie, insa nu este niciodata prea tarziu sa mai inveti ceva.",
+    { title: "Dezvoltare personală",
+      subTitle: "Evoluție",
+      text: "Educația este un proces de lungă durată care duce la evoluție, însă nu este niciodată prea târziu să mai înveți ceva.",
       imagePath: "assets/img/ipon_seoi_nage.webp"
     },
     { title: "Armonie",
