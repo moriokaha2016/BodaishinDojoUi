@@ -4,6 +4,7 @@ import { TrainingsComponent } from './trainings.component';
 import { FooterModule } from '../footer/footer.module';
 import { MaterialModule } from '../../shared/material-design/material.module';
 import { NgZoroAntdModule } from 'src/app/shared/ng-zoro/ng-zoro-antd.module';
+import { TrainingsRoutingModule } from './trainings-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { NgZoroAntdModule } from 'src/app/shared/ng-zoro/ng-zoro-antd.module';
     CommonModule,
     MaterialModule,
     NgZoroAntdModule,
-    FooterModule
+    FooterModule,
+    TrainingsRoutingModule
   ]
 })
 export class TrainingsModule { }

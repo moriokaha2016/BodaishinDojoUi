@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './modules/about/about.component';
-import { HomeComponent } from './modules/home/home.component';
-import { LocationComponent } from './modules/location/location.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
-import { TrainingsComponent } from './modules/trainings/trainings.component';
 
 const routes: Routes = [
-  { path:"",
-    component: HomeComponent
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
-  { path:"home",
-    component: HomeComponent
+  {
+    path: 'home',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
   },
-  { path:"about",
-  component: AboutComponent
+  {
+    path: 'about',
+    loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
   },
-  { path:"trainings",
-  component: TrainingsComponent
+  {
+    path: 'trainings',
+    loadChildren: () => import('./modules/trainings/trainings.module').then(m => m.TrainingsModule)
   },
-  { path:"location",
-    component: LocationComponent
+  {
+    path: 'location',
+    loadChildren: () => import('./modules/location/location.module').then(m => m.LocationModule)
   },
   { path:"**",
     component: NotFoundComponent
@@ -28,7 +30,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload', relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

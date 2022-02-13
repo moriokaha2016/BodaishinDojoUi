@@ -10,7 +10,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -30,7 +29,6 @@ const material = [
   MatInputModule,
   MatCardModule,
   FlexLayoutModule,
-  BrowserAnimationsModule,
   MatButtonToggleModule,
   MatTabsModule,
   MatGridListModule
@@ -52,7 +50,6 @@ const material = [
     MatInputModule,
     MatCardModule,
     FlexLayoutModule,
-    BrowserAnimationsModule,
     MatButtonToggleModule,
     MatTabsModule,
     MatGridListModule
@@ -72,7 +69,6 @@ const material = [
     MatInputModule,
     MatCardModule,
     FlexLayoutModule,
-    BrowserAnimationsModule,
     MatButtonToggleModule,
     MatTabsModule,
     MatGridListModule

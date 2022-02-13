@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LocationComponent } from './location.component';
 import { MaterialModule } from '../../shared/material-design/material.module';
 import { FooterModule } from '../footer/footer.module';
+import { LocationRoutingModule } from './location-routing.module';
 
 
 
@@ -13,7 +14,8 @@ import { FooterModule } from '../footer/footer.module';
   imports: [
     CommonModule,
     MaterialModule,
-    FooterModule
+    FooterModule,
+    LocationRoutingModule
   ]
 })
 export class LocationModule { }
