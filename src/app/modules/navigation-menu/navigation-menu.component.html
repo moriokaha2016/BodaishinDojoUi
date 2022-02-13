@@ -1,9 +1,9 @@
 <div [class.example-is-mobile]="mobileQuery.matches">
 
   <mat-toolbar color="primary" (scroll)="onScroll()" [ngClass]="navbarfixed?'fixed':'notfixed'">
-    <!-- <span><img class="img-fluid logo" src="assets/img/bondaishinmic.jpg"></span> -->
+    <!-- <span><img class="img-fluid logo" src="assets/img/bondaishinmic.jpg" title="Sigla Bodai Shin Dojo"></span> -->
     <button mat-icon-button (click)="snav.toggle()" aria-label="Center Align"><mat-icon>menu</mat-icon></button>
-    <span><a mat-list-item [routerLink]="['home']">Bodai Shin Dojo</a></span>
+    <span><a mat-list-item [routerLink]="['home']" title="Clubul Sportiv Bodai Shin - catre prima pagina">Bodai Shin Dojo</a></span>
     <span class="spacer"></span>
   </mat-toolbar>
 
@@ -11,11 +11,11 @@
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="15">
       <mat-nav-list class="pt-0">
-        <a mat-list-item [routerLink]="['home']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">home</span><span class="m-2">Home</span></a>
+        <a mat-list-item [routerLink]="['home']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()" title="Prima pagina"><span class="material-icons">home</span><span class="m-2">Home</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['about']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
+        <a mat-list-item [routerLink]="['about']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()" title="Cine suntem si ce valori avem"><span class="material-icons">history</span><span class="m-2">Despre noi</span></a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente Judo</span></a>
+        <a mat-list-item [routerLink]="['trainings']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()" title="Informatii despre antrenamente: Judo, Ju-Jitsu, Wing Chun, etc."><span class="material-icons">sports_kabaddi</span><span class="m-2">Antrenamente Judo</span></a>
         <mat-divider></mat-divider>
         <!-- <a mat-list-item [routerLink]="['/galery']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons"><span class="material-icons">photo_library</span></span><span class="m-2">Galerie</span></a>
         <mat-divider></mat-divider> -->
@@ -25,7 +25,7 @@
         <mat-divider></mat-divider> -->
         <!-- <a mat-list-item [routerLink]="['/donate']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">qr_code_2</span><span class="m-2">Doneaza</span></a>
         <mat-divider></mat-divider> -->
-        <a mat-list-item [routerLink]="['location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()"><span class="material-icons">place</span><span class="m-2">Locație</span></a>
+        <a mat-list-item [routerLink]="['location']" [routerLinkActive]="['menuIsActive']" (click)="snav.toggle()" title="Cum ne puteti contacta sau localiza pe harta"><span class="material-icons">place</span><span class="m-2">Locație</span></a>
       </mat-nav-list>
     </mat-sidenav>
 
